@@ -5,6 +5,7 @@ plugins {
     id("io.spring.dependency-management") version "1.0.13.RELEASE"
     kotlin("jvm") version "1.6.21"
     kotlin("plugin.spring") version "1.6.21"
+//    kotlin("plugin.serialization") version "1.6.21"
 }
 
 group = "com.hgwxr.spring-web2"
@@ -25,8 +26,10 @@ sourceSets{
 dependencies {
 
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis
-    implementation("org.springframework.boot:spring-boot-starter-data-redis:2.7.3")
+    implementation("org.springframework.boot:spring-boot-starter-data-redis")
+    implementation("redis.clients:jedis")
 
+//    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
 
     // https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter
     implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2")

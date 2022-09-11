@@ -16,8 +16,8 @@ repositories {
     mavenCentral()
 }
 
-sourceSets{
-    main{
+sourceSets {
+    main {
         resources {
 //            srcDirs("src/main/resources")
         }
@@ -28,6 +28,8 @@ dependencies {
     // https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter
 //    implementation("com.alibaba:druid-spring-boot-starter:1.2.12")
 
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.7.3")
 
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis
     implementation("org.springframework.boot:spring-boot-starter-data-redis")

@@ -8,4 +8,5 @@ import org.apache.ibatis.annotations.Select
 interface DepartmentMapper {
     @Select("SELECT * FROM department")
     fun findAllData():List<Department>
+    fun del(id: Int)
 }

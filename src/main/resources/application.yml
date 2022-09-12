@@ -1,4 +1,5 @@
 spring:
+
   datasource:
     username: root
     password: 123456
@@ -25,6 +26,15 @@ spring:
 #    query-timeout: 10
 #    validation-query: SELECT 1
 #    use-global-data-source-stat: true
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        ddl-auto: update
+    database: mysql
+    generate-ddl: true
 
   redis:
     database: 0
